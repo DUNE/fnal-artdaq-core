@@ -1,3 +1,7 @@
+IF (ALT_CMAKE)
+INCLUDE(altCMakeLists.cmake)
+ELSE()
+
 
 simple_plugin(ArtdaqCoreBuildInfo "module"
   artdaq-core_BuildInfo
@@ -14,3 +18,5 @@ simple_plugin(PrintBuildInfo "module"
 
 install_headers()
 install_source()
+
+ENDIF()

@@ -1,3 +1,7 @@
+IF (ALT_CMAKE)
+INCLUDE(altCMakeLists.cmake)
+ELSE()
+
 cet_enable_asserts()
 
 # Make sure tests have correct environment settings.
@@ -8,3 +12,5 @@ cet_test_env("FHICL_FILE_PATH=.")
 
 add_subdirectory(Data)
 add_subdirectory(Generators)
+
+ENDIF()

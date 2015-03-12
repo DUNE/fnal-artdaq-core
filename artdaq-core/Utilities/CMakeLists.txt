@@ -1,3 +1,7 @@
+IF (ALT_CMAKE)
+INCLUDE(altCMakeLists.cmake)
+ELSE()
+
 art_make(
   LIB_LIBRARIES
   ${FHICLCPP}
@@ -7,3 +11,5 @@ art_make(
 
 install_headers()
 install_source()
+
+ENDIF()

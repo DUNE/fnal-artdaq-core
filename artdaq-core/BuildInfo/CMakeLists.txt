@@ -1,3 +1,7 @@
+IF (ALT_CMAKE)
+INCLUDE(altCMakeLists.cmake)
+ELSE()
+
 # project name
 project(artdaq-core_BuildInfo)
 
@@ -16,3 +20,5 @@ art_make_library( LIBRARY_NAME artdaq-core_BuildInfo
 
 install_headers()
 install_source()
+
+ENDIF()

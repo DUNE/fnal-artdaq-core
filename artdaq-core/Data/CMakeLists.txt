@@ -1,3 +1,7 @@
+IF (ALT_CMAKE)
+INCLUDE(altCMakeLists.cmake)
+ELSE()
+
 art_make(
   LIB_LIBRARIES
   ${ART_PERSISTENCY_COMMON}
@@ -7,3 +11,5 @@ art_make(
 
 install_headers(SUBDIRS detail)
 install_source(SUBDIRS detail)
+
+ENDIF()

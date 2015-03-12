@@ -1,12 +1,6 @@
-IF (ALT_CMAKE)
-INCLUDE(altCMakeLists.cmake)
-ELSE()
-
 add_subdirectory(Utilities)
 add_subdirectory(Data)
 add_subdirectory(Core)
 add_subdirectory(Generators)
 add_subdirectory(BuildInfo)
 add_subdirectory(ArtModules)
-
-ENDIF()
